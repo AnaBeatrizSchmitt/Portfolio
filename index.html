@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="inline">
+      <h1 id="inicial" onclick="window.scrollTo(0, 0)"><span class="text">DEV</span>Portfólio</h1>
+      <nav class="navbar">
+        <a class="navLink" href="#habilidades">Habilidades</a>
+        <a class="navLink" href="#projetos">Projetos</a>
+        <a class="navLink" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <section class="principal">
+    <label class="titulo">Bem vindo(a) ao meu portfólio, sou</label>
+    <label id="subTitulo">Desenvolvera FrontEnd</label>
+    <label class="titulo">Criando sites interativos e inovadores</label>
+  </section>
+  <section class="sessao">
+    <label class="titulo">Perfil</label>
+    <section class="subSessao">
+      <p class="texto" id="sobreMim"></p>
+      <img id="imgFoto" src="Assets/foto.png" alt="Erro">
+    </section>
+  </section>
+  <section class="sessao">
+    <label class="titulo">Habilidades</label>
+    <section id="habilidades"></section>
+  </section>
+  <section class="sessao">
+    <label class="titulo">Projetos</label>
+    <section id="projetos">
+    </section>
+  </section>
+  <section class="sessao">
+    <label class="titulo">Contato</label>
+    <section id="contato">
+    </section>
+    <section class="inlineContato">
+      <section class="block" id="divForm">
+        <form id="contactFormulario" class="block">
+          <div class="block">
+            <p for="name">Nome</p>
+            <input type="text" id="name" maxlength="256">
+          </div>
+          <div class="block">
+            <p for="email" style="margin-top: 5px;">Email</p>
+            <input type="text" id="email" maxlength="356">
+          </div>
+          <div class="block">
+            <p for="message" style="margin-top: 5px;">Mensagem</p>
+            <textarea id="message"></textarea>
+          </div>
+          <button id="buttonContato" type="submit">Enviar</button>
+        </form>
+      </section>
+      <section class="block" id="divWhats">
+        <p id="textoContato"></p>
+        <button id="buttonWhatsApp" type="submit">
+          <img class="imgWhats" src="Assets/whatsApp.png">
+          WhatsApp
+        </button>
+      </section>
+    </section>
+  </section>
+  <footer>
+    <p id="footerText">&copy; Todos os direitos reservados</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
